@@ -3,7 +3,7 @@ import { renderWithTheme } from "../../testHelpers";
 import { Link, LinkExternal } from "../../components/Link";
 
 it("renders link correctly", () => {
-  const { asFragment } = renderWithTheme(<Link href="https://dev.tremendousswap.com">Link</Link>);
+  const { asFragment } = renderWithTheme(<Link href="https://tremendousswap.com">Link</Link>);
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
       <a
@@ -18,7 +18,7 @@ it("renders link correctly", () => {
 });
 
 it("renders link external link correctly", () => {
-  const { asFragment } = renderWithTheme(<LinkExternal href="https://dev.tremendousswap.com">Link</LinkExternal>);
+  const { asFragment } = renderWithTheme(<LinkExternal href="https://tremendousswap.com">Link</LinkExternal>);
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
       <a
