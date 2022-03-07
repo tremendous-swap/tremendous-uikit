@@ -120,7 +120,7 @@ const PanelFooter: React.FC<Props> = ({
         {/*</Button>*/}
         {socials.map((social, index) => {
           const Icon = Icons[social.icon];
-          const iconProps = { width: index === 1 || index === 4 ? "23px" : "20px", color: "textSubtle", style: { cursor: "pointer" } };
+          const iconProps = { width: index === 1 || index === 4 ? "23px" : "20px", height: '40px', color: "textSubtle", style: { cursor: "pointer" } };
           const mr = index < socials.length - 1 ? "6px" : 0;
           if (social.items) {
             return (
